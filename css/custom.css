@@ -1,0 +1,36 @@
+.mitad-superior {
+    min-height: 700px;
+    color: #ffffff;
+    background-image: url("../img/fondo-bg-landing.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 40px 60px;
+    }
+.logo-IPSS{
+    max-width: 300px;
+    }
+
+.texto-grande {
+    max-width: 700px;
+    font-size: 82px;
+    line-height: 1;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+    }
+
+.formulario {
+    width: 35%;
+    max-width: 470px;
+    background: #ffffff;
+    color: #092541;
+    padding: 29px 28px 25px;
+    border-radius: 0;
+    box-shadow: 0 11px 30px rgba(0, 0, 0, 0.32);
+    }
