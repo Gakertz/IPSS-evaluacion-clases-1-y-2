@@ -52,16 +52,63 @@
                     </div> 
                 </div> 
             </div>
-        <div class="formulario">
-            <h3>¡Solicita ahora más información!</h3>
-            <h4>Nombre</h4><input type="text" id="nombre" name="nombre">
-            <h4>Apellidos</h4><input type="text" id="apellidos" name="apellidos">
-            <h4>Email</h4><input type="text" id="email" name="email">
-            <h4>País</h4><input type="text" id="pais" name="pais" placeholder="CL">
-            <h4>Número de contacto</h4><input type="text" id="contacto" name="contacto">
-            <h4>RUT</h4><input type="text" id="rut" name="rut">
-            <h4>Jornada de interés</h4><input type="text" id="jornada" name="jornada">
-            <h4>Diplomados</h4><input type="text" id="diplomados" name="diplomados">
+        <div class="col-12 col-lg-5 formulario">
+            <form class="caja-formulario" id="formularioInformacion">
+                <h3>¡Solicita ahora más información!</h3>
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="apellidos">Apellidos*</label>
+                    <input type="text" id="apellidos" name="apellidos" class="form-control" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="contacto">Número de contacto*</label>
+
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <select id="pais" name="pais" class="form-select">
+                                    <option value="+56">Chile</option>
+                                    <option value="+54">Argentina</option>
+                                    <option value="+51">Perú</option>
+                                </select>
+                            </div>
+                            <div class="col-8">
+                                <input type="tel" id="contacto" name="contacto" class="form-control" placeholder="+56" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="rut">RUT*</label>
+                        <input type="text" id="rut" name="rut" class="form-control"     placeholder="12345678-9" required>
+                        <small id="mensajeRut" class="mensaje-validacion"></small>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="jornada">Jornada de interés*</label>
+                        <select id="jornada" name="jornada" class="form-select" required>
+                            <option value="">Selecciona</option>
+                            <option value="online">Online</option>
+                        </select>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="diplomado">Diplomados*</label>
+                        <select id="diplomado" name="diplomado" class="form-select" required>
+                            <option value="">Selecciona</option>
+                            <option value="ciberseguridad">Diplomado en Ciberseguridad</option>
+                            <option value="redes-industriales">Diplomado en Redes Industriales</option>
+                            <option value="fullstack">Diplomado en Fullstack</option>
+                            <option value="infraestructura-cloud">Diplomado en Infraestructura Cloud</option>
+                            <option value="arquitectura-cloud">Diplomado en Arquitectura Cloud</option>
+                            <option value="seguridad-ofensiva">Diplomado en Seguridad Ofensiva</option>
+                        </select>
+                    </div>
+            </form>
+
         </div> 
     </section>
     
