@@ -12,7 +12,7 @@
     width: 300px;
     max-width: 100%;
     height: auto;
-    margin-bottom: 75px;
+    margin-bottom: 5px;
 }
 .texto-grande {
     max-width: 700px;
@@ -131,4 +131,51 @@
     justify-content: center;
     font-size: 16px;
     font-weight: 700;
+}
+@media (max-width: 1199px) {
+    .mitad-superior {
+        min-height: auto;
+        overflow: visible;
+    }
+    .logo-ipss {
+        width: 260px;
+        margin-bottom: 35px;
+    }
+    .bloque-titulo h1 {
+        font-size: 30px;
+    }
+    .bloque-titulo h2 {
+        max-width: 100%;
+        font-size: 60px;
+    }
+    .linea-amarilla {
+        max-width: 100%;
+    }
+    .aviso-inicio {
+        font-size: 20px;
+    }
+    .formulario {
+        position: static;
+        width: 100%;
+        max-width: 470px;
+        margin: auto 0 auto;
+    }
+    .caja-formulario {
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    .mitad-superior {
+        padding: 0px 60px 50px 50px;
+    }
+    .formulario {
+        position: absolute;
+        top: 120px;
+        right: 50px;
+        width: 470px;
+    }
+    .bloque-titulo h2 {
+        max-width: 570px;
+        font-size: 80px;
+    }
 }
