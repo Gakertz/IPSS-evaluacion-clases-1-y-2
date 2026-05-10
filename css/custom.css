@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: grid;
+    gap: 10px 30px;
+}
+
+/* Contenedor flexible para alinear imágenes */
+.carousel-train .d-flex {
+  display: flex;
+  width: max-content;
+  animation: train-scroll 20s linear infinite;
+}
+
+.carousel-train img {
+  height: 150px; 
+  margin: 0 15px; 
+}
+
+/* Animación que mueve el tren de derecha a izquierda */
+@keyframes train-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
+
+/* Quitamos las transiciones por defecto de Bootstrap para que no interfieran */
+.carousel-item {
+  transition: none !important;
+}
