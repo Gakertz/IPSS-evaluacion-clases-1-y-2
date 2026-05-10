@@ -20,5 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const mensajeFormulario =
         document.getElementById("mensajeFormulario");
+        
+    formulario.addEventListener("submit", (event) => {
+        event.preventDefault();
+        
+        const nombreDiplomado =
+            diplomado.options[diplomado.selectedIndex].text;
 
+        mensajeFormulario.textContent =
+            `Gracias por solicitar más información sobre el ${nombreDiplomado}. Te contactaremos a la brevedad.`;
+    });
 });
