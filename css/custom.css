@@ -1,3 +1,183 @@
+.mitad-superior {
+    position: relative;
+    min-height: 820px;
+    color: #ffffff;
+    background-image: url("../img/fondo-bg-landing.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.logo-ipss{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+.texto-grande {
+    max-width: 700px;
+    font-size: 82px;
+    line-height: 1;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+}
+.formulario {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 470px;
+    padding: 0;
+}
+.caja-formulario {
+    width: 100%;
+    background-color: #ffffff;
+    color: #0b1f35;
+    padding: 24px 22px 28px 22px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+.caja-formulario h3 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.campo-formulario {
+    margin-bottom: 10px;
+}
+.campo-formulario label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.aceptacion-politicas .form-check-input {
+    width: 12px;
+    height: 12px;
+    margin-top: 3px;
+}
+.boton-enviar {
+    background-color: #d71920;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 7px 12px;
+}
+.boton-enviar:hover {
+    background-color: #b9151b;
+    color: #ffffff;
+}
+.bloque-titulo h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.bloque-titulo h2 {
+    max-width: 620px;
+    font-size: 80px;
+    line-height: 1.08;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+}
+.linea-dorada {
+    width: 100%;
+    max-width: 570px;
+    height: 2px;
+    border: none;
+    background-color: #cfb47b;
+    opacity: 1;
+    margin: 0 0 22px 0;
+}
+.aviso-inicio {
+    display: inline-block;
+    background-color: #ffff00;
+    color: #0b1f35;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.aviso-inicio strong {
+    font-weight:700;
+}
+.lista-beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.beneficio p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.icono-beneficio {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 50%;
+    background-color: #073a66;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+@media (max-width: 1199px) {
+    .mitad-superior {
+        min-height: auto;
+        overflow: visible;
+    }
+    .logo-ipss {
+        width: 260px;
+        margin-bottom: 35px;
+    }
+    .bloque-titulo h1 {
+        font-size: 30px;
+    }
+    .bloque-titulo h2 {
+        max-width: 100%;
+        font-size: 60px;
+    }
+    .linea-amarilla {
+        max-width: 100%;
+    }
+    .aviso-inicio {
+        font-size: 20px;
+    }
+    .formulario {
+        position: static;
+        width: 100%;
+        max-width: 470px;
+        margin: auto 0 auto;
+    }
+    .caja-formulario {
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    .mitad-superior {
+        padding: 0px 60px 50px 50px;
+    }
+    .formulario {
+        position: absolute;
+        top: 120px;
+        right: 50px;
+        width: 470px;
+    }
+    .bloque-titulo h2 {
+        max-width: 570px;
+        font-size: 80px;
+    }
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +189,6 @@
     gap: 10px 30px;
 }
 
-/* Opciones de diplomado*/
 .btn {
   background-color: #1c243c;
   color: white;
@@ -20,5 +199,4 @@
 
 .btn:hover {
 background-color: #0d111d;
-color: white;   
-}
+color: white;  
