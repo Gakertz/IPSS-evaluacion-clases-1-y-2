@@ -182,21 +182,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  .container {
+.container {
     display: grid;
     gap: 10px 30px;
 }
 
 .btn {
-  background-color: #1c243c;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+    background-color: #1c243c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 .btn:hover {
-background-color: #0d111d;
-color: white;  
+    background-color: #0d111d;
+    color: white;  
+    }
+}
+.botones-card .btn {
+  flex: 1;
+}
+.botones-card {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.card{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.container{
+    padding-top: 20px;
+}
+.row{
+        padding-bottom: 5px;
+}
