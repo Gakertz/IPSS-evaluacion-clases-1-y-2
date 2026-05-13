@@ -132,6 +132,13 @@
     font-size: 16px;
     font-weight: 700;
 }
+    .btn {
+    background-color: #1c243c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 @media (max-width: 1199px) {
     .mitad-superior {
         min-height: auto;
@@ -159,11 +166,35 @@
         width: 100%;
         max-width: 470px;
         margin: auto 0 auto;
+        padding-bottom: 20px;
     }
     .caja-formulario {
         width: 100%;
     }
 }
+.btn:hover {
+    background-color: #0d111d;
+    color: white;  
+    }
+.botones-card .btn {
+  flex: 1;
+}
+.botones-card {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.card{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.container{
+    padding-top: 20px;
+}
+.row{
+        padding-bottom: 5px;
+    }
 @media (min-width: 1200px) {
     .mitad-superior {
         padding: 0px 60px 50px 50px;
@@ -178,6 +209,16 @@
         max-width: 570px;
         font-size: 80px;
     }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    gap: 10px 30px;
+}
 /* Contenedor flexible para alinear imágenes */
     .carousel-train .d-flex {
         display: flex;
@@ -213,25 +254,5 @@
     }
     .correo-ipss {
         color: white;
-    }
-    .btn {
-    background-color: #1c243c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    }
-
-    .btn:hover {
-    background-color: #0d111d;
-    color: white;  
-    }
-
-    .mitad-inferior{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .diplomado{
-        padding-top: 10px;
     }
 }
