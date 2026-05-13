@@ -195,29 +195,27 @@
 .row{
         padding-bottom: 5px;
     }
-@media (min-width: 1200px) {
-    .mitad-superior {
-        padding: 0px 60px 50px 50px;
-    }
-    .formulario {
-        position: absolute;
-        top: 120px;
-        right: 50px;
-        width: 470px;
-    }
-    .bloque-titulo h2 {
-        max-width: 570px;
-        font-size: 80px;
-    }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* Contenedor flexible para alinear imágenes */
+.carousel-train .d-flex {
+  display: flex;
+  width: max-content;
+  animation: train-scroll 20s linear infinite;
 }
 
-.container {
-    display: grid;
-    gap: 10px 30px;
+.carousel-train img {
+  height: 150px; 
+  margin: 0 15px; 
+}
+
+/* Animación que mueve el tren de derecha a izquierda */
+@keyframes train-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
+
+/* Quitamos las transiciones por defecto de Bootstrap para que no interfieran */
+.carousel-item {
+  transition: none !important;
 }
 /* Contenedor flexible para alinear imágenes */
     .carousel-train .d-flex {
@@ -226,10 +224,19 @@
         animation: train-scroll 20s linear infinite;
     }
 
-    .carousel-train img {
-        height: 150px; 
-        margin: 0 15px; 
-    }
+/* footer*/
+.footer-oscuro {
+    background-color: #1c243c;
+    color: white;
+  }
+  .logo-ipps {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
+  .correo-ipss {
+    color: white;
+  }
 
 /* Animación que mueve el tren de derecha a izquierda */
     @keyframes train-scroll {
@@ -255,4 +262,19 @@
     .correo-ipss {
         color: white;
     }
+@media (min-width: 1200px) {
+    .mitad-superior {
+        padding: 0px 60px 50px 50px;
+    }
+    .formulario {
+        position: absolute;
+        top: 120px;
+        right: 50px;
+        width: 470px;
+    }
+    .bloque-titulo h2 {
+        max-width: 570px;
+        font-size: 80px;
+    }
+
 }
