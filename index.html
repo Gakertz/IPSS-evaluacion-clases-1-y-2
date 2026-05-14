@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clon de Educacion Continua IPSS">
+    <title>Evaluación 1 diplomado full stack Sergio y Tomás</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <main class="main-content">
+    <section id="formulario" class="mitad-superior" label="Diplomados 2026 IPSS">
+        <div class="container-fluid contenedor-superior">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-12 col-lg-7 lado-izquierdo">
+                <header class="encabezado">
+                    <img
+                        src="https://educacioncontinua.ipss.cl/images/logo-wide.png"
+                        alt="Instituto Profesional San Sebastián"
+                        class="logo-ipss"
+                    >
+                </header>
+                    <div class="bloque-titulo">
+                        <h1>Diplomados 2026</h1>
+                        <h2>
+                            Potencia tu Perfil Profesional
+                        </h2>
+                        <hr class="linea-dorada">
+                        <div class="aviso-inicio">
+                            <span>Inicio:</span>
+                            <strong>Julio 2026</strong>
+                        </div>
+                        <div class="lista-beneficios">
+                            <article class="beneficio">
+                                <span class="icono-beneficio">#</span>
+                                <p>Genera networking compartiendo tus experiencias</p>
+                            </article>
+                            <article class="beneficio">
+                                <span class="icono-beneficio">#</span>
+                                <p>Plataforma de aprendizaje 24/7</p>
+                            </article>
+                            <article class="beneficio">
+                                <span class="icono-beneficio">#</span>
+                                <p>Clases sincrónicas y asincrónicas con docentes expertos en la industria.</p>
+                            </article>
+                            <article class="beneficio">
+                                <span class="icono-beneficio">#</span>
+                                <p>Apoyo permanente de tutores</p>
+                            </article>
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        <div class="col-12 col-lg-5 form">
+            <form class="caja-formulario" id="formularioInformacion">
+                <h3>¡Solicita ahora más información!</h3>
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="apellidos">Apellidos*</label>
+                    <input type="text" id="apellidos" name="apellidos" class="form-control" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="contacto">Número de contacto*</label>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <select id="pais" name="pais" class="form-select">
+                                    <option value="+56">Chile</option>
+                                </select>
+                            </div>
+                            <div class="col-8">
+                                <input type="tel" id="contacto" name="contacto" class="form-control" placeholder="+56" required>
+                            </div>
+                        </div>
+                        <small id="mensajeContacto" class="mensaje-validacion"></small>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="rut">RUT*</label>
+                        <input type="text" id="rut" name="rut" class="form-control"     placeholder="12345678-9" required>
+                        <small id="mensajeRut" class="mensaje-validacion"></small>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="jornada">Jornada de interés*</label>
+                        <select id="jornada" name="jornada" class="form-select" required>
+                            <option value="">Selecciona</option>
+                            <option value="online">Online</option>
+                        </select>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="diplomado">Diplomados*</label>
+                        <select id="diplomado" name="diplomado" class="form-select" required>
+                            <option value="">Selecciona</option>
+                            <option value="ciberseguridad">Diplomado en Ciberseguridad</option>
+                            <option value="redes-industriales">Diplomado en Redes Industriales</option>
+                            <option value="fullstack">Diplomado en Fullstack</option>
+                            <option value="infraestructura-cloud">Diplomado en Infraestructura Cloud</option>
+                            <option value="arquitectura-cloud">Diplomado en Arquitectura Cloud</option>
+                            <option value="seguridad-ofensiva">Diplomado en Seguridad Ofensiva</option>
+                        </select>
+                    </div>
+                    <div class="form-check aceptacion-politicas">
+                        <input class="form-check-input" type="checkbox" id="privacidad" required>
+                        <label class="form-check-label" for="privacidad">
+                            Acepto las políticas de privacidad de IPSS*
+                        </label>
+                    </div>
+                    <button type="submit" class="boton-enviar w-100">
+                        Enviar
+                    </button>
+                    <p id="mensajeFormulario" class="mensaje-formulario"></p>
+            </form>
+        </div> 
+    </section>
+<section id="diplomados" class="mitad inferior" label="Listado de diplomados">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 pb-4 maxwidth500 card" style="background-color: #eeeeea;">
+                    <a> <img src="./img/diplomado-ciberseguridad.jpg" width="100%"  alt="link diplomado Ciberseguridad"></a>
+                    <h4>Diplomado en Ciberseguridad</h4>
+                    <p>Aprende a proteger activos digitales con nuestro Diplomado en Ciberseguridad. Adquiere habilidades en detección de amenazas, seguridad de redes y más.</p>
+                    <div class="botones-card">
+                        <a id="btnDescargar" class="btn">Descargar Malla</a>
+                        <a id="btnInfo" class="btn">Más Información</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pb-4 maxwidth500 card" style="background-color: #eeeeea;">
+                    <a> <img src="./img/diplomado-redesindustriales.jpg" width="100%"  alt="link diplomado Redes Industriales"></a>
+                    <h4>Diplomado en Redes Industriales</h4>
+                    <p>Aprende la implementación y la gestión de redes especializadas para la industria.</p>
+                    <div class="botones-card">
+                        <a id="btnDescargar" class="btn btn-sm btn-theme-colored">Descargar Malla</a>
+                        <a id="btnInfo" class="btn btn-sm btn-theme-colored">Más Información</a> 
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pb-4 maxwidth500 card" style="background-color: #eeeeea;">
+                    <a> <img src="./img/diplomado-fullstack.jpg" width="100%"  alt="link diplomado Fullstack"></a>
+                    <h4>Diplomado en Fullstack</h4>
+                    <p>Aprende a brindar una comprensión general y experiencia en diversas áreas de desarrollo web, desde el lado del cliente hasta el servidor.</p>
+                    <div class="botones-card">
+                        <a id="btnDescargar" class="btn btn-sm btn-theme-colored">Descargar Malla</a>
+                        <a id="btnInfo" class="btn btn-sm btn-theme-colored">Más Información</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 pb-4 maxwidth500 card" style="background-color: #eeeeea;">
+                    <a> <img src="./img/diplomado-infraestructuracloud.jpg" width="100%"  alt="link diplomado Infraestructura Cloud"></a>
+                    <h4>Diplomado en Infraestructura Cloud</h4>
+                    <p>El programa capacita para identificar y diseñar infraestructuras híbridas, implementando herramientas y estándares del Cloud Computing.</p>
+                    <div class="botones-card">
+                        <a id="btnDescargar" class="btn btn-sm btn-theme-colored">Descargar Malla</a>
+                        <a id="btnInfo" class="btn btn-sm btn-theme-colored">Más Información</a> 
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pb-4 maxwidth500 card" style="background-color: #eeeeea;">
+                    <a> <img src="./img/diplomado-arqcloud.jpg" width="100%"  alt="link diplomado Arquitectura Cloud"></a>
+                    <h4>Diplomado en Arquitectura Cloud</h4>
+                    <p>Este programa abarca desde conceptos teóricos hasta aplicaciones prácticas en el diseño y administración de soluciones en la nube.</p>
+                    <div class="botones-card">
+                        <a id="btnDescargar" class="btn btn-sm btn-theme-colored">Descargar Malla</a>
+                        <a id="btnInfo" class="btn btn-sm btn-theme-colored">Más Información</a> 
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pb-4 maxwidth500 card" style="background-color: #eeeeea;">
+                    <a> <img src="./img/diplomado-seguridadofensiva.jpg" width="100%"  alt="link diplomado Seguridad Ofensiva y Ethical Hacking"></a>
+                    <h4>Diplomado en Seguridad Ofensiva y Ethical Hacking</h4>
+                    <p>Especialización diseñada para cerrar la brecha en protección de activos digitales, enseñando a ejecutar auditorías de penetración bajo la premisa de pensar como el adversario.</p>
+                    <div class="botones-card">
+                        <a id="btnDescargar" class="btn btn-sm btn-theme-colored">Descargar Malla</a>
+                        <a id="btnInfo" class="btn btn-sm btn-theme-colored">Más Información</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 pb-4 maxwidth500 card" style="background-color: #eeeeea;">
+                    <a> <img src="./img/diplomado-hospitalizacion-dom.jpg" width="100%"  alt="link diplomado Hospitalización Domiciliaria e Intervención Técnica Interdisciplinaria"></a>
+                    <h4>Diplomado en Hospitalización Domiciliaria e Intervención Técnica Interdisciplinaria</h4>
+                    <p>Este programa cierra la brecha de competencias específicas para el personal técnico en el entorno del hogar, abordando la logística de insumos críticos y la falta de infraestructura clínica.</p>
+                    <div class="botones-card">
+                        <a id="btnDescargar" class="btn btn-sm btn-theme-colored">Descargar Malla</a>
+                        <a id="btnInfo" class="btn btn-sm btn-theme-colored">Más Información</a> 
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 pb-4 maxwidth500 card" style="background-color: #eeeeea;">
+                    <a> <img src="./img/diplomado-arqcloud.jpg" width="100%"  alt="link diplomado Cuidados Integrales y Dependencia en Personas Mayores"></a>
+                    <h4>Diplomado en Cuidados Integrales y Dependencia en Personas Mayores</h4>
+                    <p>El programa fortalece las competencias de técnicos y profesionales para el abordaje integral de personas mayores en situación de dependencia.</p>
+                    <div class="botones-card">
+                        <a id="btnDescargar" class="btn btn-sm btn-theme-colored">Descargar Malla</a>
+                        <a id="btnInfo" class="btn btn-sm btn-theme-colored">Más Información</a> 
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <section>
+            <div class="container-fluid py-4" style="background-color: #082742;">
+                <div class="carousel slide carousel-train" data-bs-ride="carousel"> 
+                    <div class="carousel-inner">
+                        <div class="d-flex">
+                            <a href=""> <img class="d-block" src="./img/cert1.jpg" alt="Cisco Networking Academy"></a>
+                            <a href=""> <img class="d-block" src="./img/cert2.jpg" alt="Red Hat Academy"></a>
+                            <a href=""> <img class="d-block" src="./img/cert3.jpg" alt="Fortinet"></a>
+                            <a href=""> <img class="d-block" src="./img/cert4.jpg" alt="Microsoft IT Academy"></a>
+                            <a href=""> <img class="d-block" src="./img/cert5.jpg" alt="Oracle Academy"></a>
+                            <a href=""> <img class="d-block" src="./img/cert6.jpg" alt="British Council EnglishScore"></a>
+                            <a href=""> <img class="d-block" src="./img/cert7.jpg" alt="Ec-Council Academy Partner"></a>
+                            <a href=""> <img class="d-block" src="./img/cert1.jpg" alt="Cisco Networking Academy"></a>
+                            <a href=""> <img class="d-block" src="./img/cert2.jpg" alt="Red Hat Academy"></a>
+                            <a href=""> <img class="d-block" src="./img/cert3.jpg" alt="Fortinet"></a>
+                            <a href=""> <img class="d-block" src="./img/cert4.jpg" alt="Microsoft IT Academy"></a>
+                            <a href=""> <img class="d-block" src="./img/cert5.jpg" alt="Oracle Academy"></a>
+                            <a href=""> <img class="d-block" src="./img/cert6.jpg" alt="British Council EnglishScore"></a>
+                            <a href=""> <img class="d-block" src="./img/cert7.jpg" alt="Ec-Council Academy Partner"></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+        <footer>
+            <section class="footer-oscuro" style="background-color: #2B2B2B;">
+                <h4>
+                    <img src="./img/icons8-nuevo-post-50.png" alt="Icono correo" width="20">
+                    <a class="correo-ipss" href="mailto:educacioncontinua@ipss.cl">educacioncontinua@ipss.cl</a>           
+                </h4>
+                <div class="logo-ipps">          
+                    <a href="mailto:educacioncontinua@ipss.cl"> <img class="img-ipps" alt="Logo IPSS" src="./img/logo-white-footer.png"></a>
+                </div>
+                <div class="container-fluid" style="background-color:  #0f0e13;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <center><p class="text-white font-8 m-0">Todos los derechos reservados Instituto Profesional San Sebastián -
+                                Educación Continua 2026</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body></html>
