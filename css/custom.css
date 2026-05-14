@@ -154,7 +154,7 @@
     .aviso-inicio {
         font-size: 20px;
     }
-    .formulario {
+    .form{
         position: static;
         width: 100%;
         max-width: 470px;
@@ -168,7 +168,7 @@
     .mitad-superior {
         padding: 0px 60px 50px 50px;
     }
-    .formulario {
+    .form {
         position: absolute;
         top: 120px;
         right: 50px;
