@@ -75,4 +75,17 @@ document.addEventListener("DOMContentLoaded", () => {
             mensajeRut.style.color = "green";
         }
     });
+    const botonDescargar = document.querySelector("#btnDescargar");
+
+    botonDescargar.addEventListener("click", (event) => {
+        event.preventDefault(); 
+        
+        alert("¡Iniciando la descarga de la malla!");
+        console.log("El usuario hizo clic en descargar.");
+    });
+
+    const botonInfo = document.querySelector("#btnInfo");
+    botonInfo.addEventListener("click", () => {
+        alert("Cargando más información...");
+    });
 });
