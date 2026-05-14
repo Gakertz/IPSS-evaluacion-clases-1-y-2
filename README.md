@@ -18,12 +18,20 @@ Sitio estático desarrollado como clon visual de la landing page de Educación C
 ## Demo
 
 Sitio desplegado: https://gakertz.github.io/IPSS-evaluacion-clases-1-y-2/
-##Formulario:
-![imagen del formulario de contacto](img/Formulario-diplomado-nuevo.png)
-##Catálogo de diplomados:
-![imagen del catálogo de diplomados](img/Catalogo-diplomado-nuevo.png)
-##Carrusel de certificaciones y footer:
-![imagen del footer de la página](img/imagen%20footer.png)
+
+## Capturas del sitio
+
+### Formulario de contacto
+
+![Imagen del formulario de contacto](img/Formulario-diplomado-nuevo.png)
+
+### Catálogo de diplomados
+
+![Imagen del catálogo de diplomados](img/Catalogo-diplomado-nuevo.png)
+
+### Carrusel de certificaciones y footer
+
+![Imagen del carrusel de certificaciones y footer](img/imagen%20footer.png)
 
 ## Cómo correr localmente
 
