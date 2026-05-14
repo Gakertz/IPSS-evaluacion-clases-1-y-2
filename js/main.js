@@ -75,17 +75,21 @@ document.addEventListener("DOMContentLoaded", () => {
             mensajeRut.style.color = "green";
         }
     });
-    const botonDescargar = document.querySelector("#btnDescargar");
-
-    botonDescargar.addEventListener("click", (event) => {
-        event.preventDefault(); 
-        
-        alert("¡Iniciando la descarga de la malla!");
-        console.log("El usuario hizo clic en descargar.");
+    const botonesDescargar = document.querySelectorAll(".btnDescargar");
+ 
+    botonesDescargar.forEach((boton) => {
+        boton.addEventListener("click", (event) => {
+            event.preventDefault();
+ 
+            alert("¡Iniciando la descarga de la malla!");
+        });
     });
 
-    const botonInfo = document.querySelector("#btnInfo");
-    botonInfo.addEventListener("click", () => {
-        alert("Cargando más información...");
+    const botonesInfo = document.querySelectorAll(".btnInfo");
+        botonesInfo.forEach((boton) => {
+        boton.addEventListener("click", (event) => {
+            event.preventDefault();
+            alert("Cargando más información...");
+        });
     });
 });
