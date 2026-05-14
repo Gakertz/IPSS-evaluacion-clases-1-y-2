@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const formulario =
+    const form =
         document.getElementById("formularioInformacion");
 
     const rut =
@@ -17,11 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const mensajeRut =
         document.getElementById("mensajeRut");
+    const mensajeContacto =
+        document.getElementById("mensajeContacto");
 
     const mensajeFormulario =
         document.getElementById("mensajeFormulario");
         
-    formulario.addEventListener("submit", (event) => {
+    form.addEventListener("submit", (event) => {
         event.preventDefault();
 
         const nombreDiplomado =
@@ -30,17 +32,19 @@ document.addEventListener("DOMContentLoaded", () => {
         mensajeFormulario.textContent =
             `Gracias por solicitar más información sobre el ${nombreDiplomado}. Te contactaremos a la brevedad.`;
     });
-    formulario.addEventListener("input", function () {
+    form.addEventListener("input", function () {
 
         if (!contacto.value.startsWith("+56")) {
-            mensajeFormulario.textContent =
+            mensajeContacto.textContent =
                 "El número debe comenzar con +56.";
-            mensajeFormulario.style.color = "red"
+            mensajeContacto.style.color = "red"
         }else if (contacto.value.length !== 12) {
-            mensajeFormulario.textContent =
+            mensajeContacto.textContent =
                 "El teléfono debe tener 12 caracteres.";
-                mensajeFormulario.style.color = "red"
-            return;
+                mensajeContacto.style.color = "red"
+        }else{
+            mensajeContacto.textContent = "Formato de telefono correcto.";
+            mensajeContacto.style.color = "green";
         }
 
     });
