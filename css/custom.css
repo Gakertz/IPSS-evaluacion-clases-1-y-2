@@ -1,19 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .mitad-superior {
     position: relative;
-    min-height: 820px;
+    min-height: auto;
     color: #ffffff;
     background-image: url("../img/fondo-bg-landing.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow: visible;
 }
-.logo-ipss{
-    width: 300px;
+
+.logo-ipss {
+    width: 260px;
     max-width: 100%;
     height: auto;
-    margin-bottom: 5px;
+    margin-bottom: 35px;
 }
+
 .texto-grande {
     max-width: 700px;
     font-size: 82px;
@@ -22,13 +30,15 @@
     text-transform: uppercase;
     color: white;
 }
-.formulario {
-    position: absolute;
-    top: 100px;
-    right: 50px;
-    width: 470px;
-    padding: 0;
+
+.form {
+    position: static;
+    width: 100%;
+    max-width: 470px;
+    margin: auto 0 auto;
+    padding: 0 0 20px 0;
 }
+
 .caja-formulario {
     width: 100%;
     background-color: #ffffff;
@@ -36,24 +46,29 @@
     padding: 24px 22px 28px 22px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
+
 .caja-formulario h3 {
     text-align: center;
     font-weight: 400;
     margin-bottom: 20px;
 }
+
 .campo-formulario {
     margin-bottom: 10px;
 }
+
 .campo-formulario label {
     display: block;
     font-weight: 600;
     margin-bottom: 5px;
 }
+
 .aceptacion-politicas .form-check-input {
     width: 12px;
     height: 12px;
     margin-top: 3px;
 }
+
 .boton-enviar {
     background-color: #d71920;
     color: #ffffff;
@@ -62,24 +77,28 @@
     font-weight: 600;
     padding: 7px 12px;
 }
+
 .boton-enviar:hover {
     background-color: #b9151b;
     color: #ffffff;
 }
+
 .bloque-titulo h1 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 400;
     margin-bottom: 12px;
 }
+
 .bloque-titulo h2 {
-    max-width: 620px;
-    font-size: 80px;
+    max-width: 100%;
+    font-size: 60px;
     line-height: 1.08;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 14px;
     letter-spacing: 1px;
 }
+
 .linea-dorada {
     width: 100%;
     max-width: 570px;
@@ -89,6 +108,11 @@
     opacity: 1;
     margin: 0 0 22px 0;
 }
+
+.linea-amarilla {
+    max-width: 100%;
+}
+
 .aviso-inicio {
     display: inline-block;
     background-color: #ffff00;
@@ -96,29 +120,34 @@
     padding: 12px 16px;
     border-radius: 6px;
     margin-bottom: 35px;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
+
 .aviso-inicio strong {
-    font-weight:700;
+    font-weight: 700;
 }
+
 .lista-beneficios {
     display: flex;
     flex-direction: column;
     gap: 28px;
 }
+
 .beneficio {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
 .beneficio p {
     margin: 0;
     font-size: 18px;
     font-weight: 600;
     color: #ffffff;
 }
+
 .icono-beneficio {
     width: 36px;
     height: 36px;
@@ -132,50 +161,116 @@
     font-size: 16px;
     font-weight: 700;
 }
-@media (max-width: 1199px) {
-    .mitad-superior {
-        min-height: auto;
-        overflow: visible;
+
+.btn {
+    background-color: #1c243c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0d111d;
+    color: white;
+}
+
+.botones-card {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.botones-card .btn {
+    flex: 1;
+}
+
+.card {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container {
+    padding-top: 20px;
+    display: grid;
+    gap: 10px 30px;
+}
+
+.row {
+    padding-bottom: 5px;
+}
+
+.carousel-train .d-flex {
+    display: flex;
+    width: max-content;
+    animation: train-scroll 20s linear infinite;
+}
+
+.carousel-train img {
+    height: 150px;
+    margin: 0 15px;
+}
+
+@keyframes train-scroll {
+    0% {
+        transform: translateX(0);
     }
-    .logo-ipss {
-        width: 260px;
-        margin-bottom: 35px;
-    }
-    .bloque-titulo h1 {
-        font-size: 30px;
-    }
-    .bloque-titulo h2 {
-        max-width: 100%;
-        font-size: 60px;
-    }
-    .linea-amarilla {
-        max-width: 100%;
-    }
-    .aviso-inicio {
-        font-size: 20px;
-    }
-    .formulario {
-        position: static;
-        width: 100%;
-        max-width: 470px;
-        margin: auto 0 auto;
-    }
-    .caja-formulario {
-        width: 100%;
+
+    100% {
+        transform: translateX(-50%);
     }
 }
-@media (min-width: 1200px) {
+
+.carousel-item {
+    transition: none !important;
+}
+
+.footer-oscuro {
+    background-color: #1c243c;
+    color: white;
+}
+
+.logo-ipps {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.correo-ipss {
+    color: white;
+}
+
+@media (min-width: 900px) {
     .mitad-superior {
+        min-height: 820px;
+        overflow: hidden;
         padding: 0px 60px 50px 50px;
     }
-    .formulario {
+
+    .logo-ipss {
+        width: 300px;
+        margin-bottom: 5px;
+    }
+
+    .form {
         position: absolute;
         top: 120px;
         right: 50px;
         width: 470px;
+        padding: 0;
     }
+
+    .bloque-titulo h1 {
+        font-size: 36px;
+    }
+
     .bloque-titulo h2 {
         max-width: 570px;
         font-size: 80px;
+    }
+
+    .aviso-inicio {
+        font-size: 25px;
     }
 }
