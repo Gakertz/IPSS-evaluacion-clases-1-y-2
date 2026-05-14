@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const formulario =
+    const form =
         document.getElementById("formularioInformacion");
 
     const rut =
@@ -17,11 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const mensajeRut =
         document.getElementById("mensajeRut");
+    const mensajeContacto =
+        document.getElementById("mensajeContacto");
 
     const mensajeFormulario =
         document.getElementById("mensajeFormulario");
         
-    formulario.addEventListener("submit", (event) => {
+    form.addEventListener("submit", (event) => {
         event.preventDefault();
 
         const nombreDiplomado =
@@ -30,20 +32,47 @@ document.addEventListener("DOMContentLoaded", () => {
         mensajeFormulario.textContent =
             `Gracias por solicitar más información sobre el ${nombreDiplomado}. Te contactaremos a la brevedad.`;
     });
-    formulario.addEventListener("submit", (event) => {
-        event.preventDefault();
+    form.addEventListener("input", function () {
 
         if (!contacto.value.startsWith("+56")) {
-            mensajeFormulario.textContent =
+            mensajeContacto.textContent =
                 "El número debe comenzar con +56.";
-            return;
-        }
-
-        if (contacto.value.length !== 12) {
-            mensajeFormulario.textContent =
+            mensajeContacto.style.color = "red"
+        }else if (contacto.value.length !== 12) {
+            mensajeContacto.textContent =
                 "El teléfono debe tener 12 caracteres.";
-            return;
+                mensajeContacto.style.color = "red"
+        }else{
+            mensajeContacto.textContent = "Formato de telefono correcto.";
+            mensajeContacto.style.color = "green";
         }
 
+    });
+    rut.addEventListener("input", function () {
+        const valorRut = rut.value;
+        const posicionGuion = valorRut.indexOf("-");
+        const ultimaPosicion = valorRut.length - 2;
+        const tieneGuionAntesDelUltimoDigito = posicionGuion === ultimaPosicion;
+        const rutSinGuion = valorRut.replace("-", "");
+
+        if (valorRut.length === 0) {
+            mensajeRut.textContent = "";
+            mensajeRut.style.color = "";
+        } else if (!valorRut.includes("-")) {
+            mensajeRut.textContent = "El RUT debe incluir guion. Ejemplo: 12345678-9";
+            mensajeRut.style.color = "red";
+        } else if (!tieneGuionAntesDelUltimoDigito) {
+            mensajeRut.textContent = "El guion debe estar antes del último dígito. Ejemplo: 12345678-9";
+            mensajeRut.style.color = "red";
+        } else if (rutSinGuion.length > 9) {
+            mensajeRut.textContent = "El RUT no debe tener más de 9 caracteres sin contar el guion.";
+            mensajeRut.style.color = "red";
+        } else if (rutSinGuion.length < 8) {
+            mensajeRut.textContent = "El RUT no debe tener menos de 8 caracteres sin contar el guion.";
+            mensajeRut.style.color = "red";
+        } else {
+            mensajeRut.textContent = "Formato de RUT correcto.";
+            mensajeRut.style.color = "green";
+        }
     });
 });
