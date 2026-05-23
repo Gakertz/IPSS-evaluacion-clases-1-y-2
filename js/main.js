@@ -1,4 +1,7 @@
+import { iniciarModoOscuro } from './modo_oscuro.js';
+
 document.addEventListener("DOMContentLoaded", () => {
+    iniciarModoOscuro();
 
     const form =
         document.getElementById("formularioInformacion");
@@ -17,12 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const mensajeRut =
         document.getElementById("mensajeRut");
+
     const mensajeContacto =
         document.getElementById("mensajeContacto");
 
     const mensajeFormulario =
         document.getElementById("mensajeFormulario");
-        
+
     form.addEventListener("submit", (event) => {
         event.preventDefault();
 
@@ -32,22 +36,24 @@ document.addEventListener("DOMContentLoaded", () => {
         mensajeFormulario.textContent =
             `Gracias por solicitar más información sobre el ${nombreDiplomado}. Te contactaremos a la brevedad.`;
     });
+
     form.addEventListener("input", function () {
 
         if (!contacto.value.startsWith("+56")) {
             mensajeContacto.textContent =
                 "El número debe comenzar con +56.";
-            mensajeContacto.style.color = "red"
-        }else if (contacto.value.length !== 12) {
+            mensajeContacto.style.color = "red";
+        } else if (contacto.value.length !== 12) {
             mensajeContacto.textContent =
                 "El teléfono debe tener 12 caracteres.";
-                mensajeContacto.style.color = "red"
-        }else{
+            mensajeContacto.style.color = "red";
+        } else {
             mensajeContacto.textContent = "Formato de telefono correcto.";
             mensajeContacto.style.color = "green";
         }
 
     });
+
     rut.addEventListener("input", function () {
         const valorRut = rut.value;
         const posicionGuion = valorRut.indexOf("-");
@@ -75,18 +81,20 @@ document.addEventListener("DOMContentLoaded", () => {
             mensajeRut.style.color = "green";
         }
     });
+
     const botonesDescargar = document.querySelectorAll(".btnDescargar");
- 
+
     botonesDescargar.forEach((boton) => {
         boton.addEventListener("click", (event) => {
             event.preventDefault();
- 
+
             alert("¡Iniciando la descarga de la malla!");
         });
     });
 
     const botonesInfo = document.querySelectorAll(".btnInfo");
-        botonesInfo.forEach((boton) => {
+
+    botonesInfo.forEach((boton) => {
         boton.addEventListener("click", (event) => {
             event.preventDefault();
             alert("Cargando más información...");
