@@ -274,3 +274,54 @@
         font-size: 25px;
     }
 }
+.boton-modo-oscuro {
+    background-color: gray;
+    color: white;
+}
+.modo-oscuro {
+    background-color:#202f42;
+    color: white;
+}
+.modo-oscuro .main-content {
+    background-color: black;
+    color: white;
+}
+.modo-oscuro .contenedor-modo-oscuro {
+    background-color: #292a2b;
+}
+.modo-oscuro .caja-formulario {
+    background-color: black;
+    color: white ;
+    border: 1px solid gray;
+}
+.modo-oscuro .caja-formulario,
+.modo-oscuro .campo-formulario label,
+.modo-oscuro .form-check-label {
+    color: white;
+}
+.modo-oscuro .form-control,
+.modo-oscuro .form-select {
+    background-color: black;
+    color: white;
+    border-color: gray;
+}
+.modo-oscuro .form-control::placeholder {
+    color: white;
+}
+.modo-oscuro .bloque-titulo h1,
+.modo-oscuro .bloque-titulo h2,
+.modo-oscuro .beneficio p,
+.modo-oscuro h1,
+.modo-oscuro h2,
+.modo-oscuro h3,
+.modo-oscuro h4,
+.modo-oscuro p,
+.modo-oscuro label {
+    color: white;
+}
+.modo-oscuro .card {
+    background-color: rgb(70, 70, 71) !important;
+    color: white;
+}
+
+
