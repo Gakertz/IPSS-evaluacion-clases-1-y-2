@@ -31,7 +31,24 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
             
                     const datos = await respuesta.json();
-                                      
+                    
+                    const respuestaa = await fetch('data/datos.json');
+
+                    if (!respuestaa.ok) {
+                        throw new Error(`No se pudo obtener el archivo JSON (Estado: ${respuestaa.status})`);
+                    }
+
+                    const diplomados = await respuestaa.json();
+
+                    const resultado = diplomados.find(d => d.id === divId);
+
+                    if (resultado) {
+                        console.log(`Diplomado: ${resultado.diplomado}`);
+                        console.log(`Información: ${resultado.informacion}`);
+                    } else {
+                        console.warn(`No existe ningún diplomado con el ID "${divId}".`);
+                    }
+
                     const nombre = datos.name;
                     const imagen = datos.sprites.front_default;
                     const tipos = datos.types.map(tipoInfo => tipoInfo.type.name).join(', ');
@@ -48,12 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
                             <h2 class="pokemon-name">${datos.name}</h2>
                             <img src="${datos.sprites.front_default}" alt="${datos.name}">
                             <div class="pokemon-info">
-                                 <p><strong>Peso:</strong> ${datos.weight / 10} kg</p>
-                                 <p><strong>Altura:</strong> ${datos.height / 10} m</p>
+                                 <p><h2>${resultado.diplomado}</h2></p>
                             </div>
                             <div class="pokemon-info" style="margin-top: 10px;">
-                                 <p><strong>Exp. Base:</strong> ${datos.base_experience || '---'} exp</p>
-                                 <p><strong>Orden:</strong> #${datos.order}</p>
+                                <p class="texto-pequeno">${resultado.informacion}</p>
                             </div>
                         
                     `;

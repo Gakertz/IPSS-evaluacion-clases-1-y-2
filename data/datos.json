@@ -1,0 +1,10 @@
+[
+    { "id": "diplo1", "diplomado": "Ciberseguridad", "informacion": "Entrega bases teórico-prácticas sobre la protección de activos digitales, gestión de riesgos, seguridad ofensiva y normativas de seguridad de la información." },
+    { "id": "diplo2", "diplomado": "Redes Industriales", "informacion": "Diseñado para capacitar a profesionales en la implementación, gestión y diagnóstico de arquitecturas de comunicación dentro de entornos productivos, conectando sistemas físicos con tecnologías digitales." },
+    { "id": "diplo3", "diplomado": "Fullstack", "informacion": "Formar profesionales con habilidades integrales (T-shaped), capacitados para dominar todo el ciclo de desarrollo de software, abarcando desde la interfaz de usuario hasta los servidores y bases de datos." },
+    { "id": "diplo4", "diplomado": "Infraestructura Cloud", "informacion": "Programa oficial de educación continua dictado por el Instituto Profesional San Sebastián (IPSS) de Chile. Está diseñado para capacitar a profesionales del área tecnológica en el diseño, implementación y gestión de entornos de computación en la nube." },
+    { "id": "diplo5", "diplomado": "Arquitectura Cloud", "informacion": "Enfocado en el diseño estratégico, optimización y estructuración de soluciones escalables utilizando principalmente los servicios de Amazon Web Services." },
+    { "id": "diplo6", "diplomado": "Seguridad Ofensiva y Ethical Hacking", "informacion": "Su objetivo central es entrenar a profesionales de TI bajo la premisa de (pensar como el adversario)." },
+    { "id": "diplo7", "diplomado": "Hospitalización Domiciliaria", "informacion": "Diseñado para cerrar la brecha de competencias del personal técnico y profesional en el ámbito del cuidado y tratamiento clínico dentro del hogar." },
+    { "id": "diplo8", "diplomado": "Cuidados Integrales", "informacion": "Capacitar a técnicos y profesionales de la salud para abordar de manera integral el envejecimiento acelerado y la pérdida de autonomía." }
+  ]

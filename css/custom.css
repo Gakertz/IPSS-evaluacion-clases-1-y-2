@@ -400,3 +400,7 @@
     text-transform: uppercase;
     color: #6c757d;
   }
+
+  .texto-pequeno {
+    font-size: 14px;
+  }
