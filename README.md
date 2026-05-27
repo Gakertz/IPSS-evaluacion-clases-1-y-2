@@ -23,15 +23,19 @@ Sitio desplegado: https://gakertz.github.io/IPSS-evaluacion-clases-1-y-2/
 
 ### Formulario de contacto
 
-![Imagen del formulario de contacto](img/Formulario-diplomado-nuevo.png)
+![Imagen del formulario de contacto tema claro](img/Formulario_claro.png)
+
+![Imagen del formulario de contacto tema oscuro](img/Formulario_oscuro.png)
 
 ### Catálogo de diplomados
 
-![Imagen del catálogo de diplomados](img/Catalogo-diplomado-nuevo.png)
+![Imagen del catálogo de diplomados tema claro](img/Catalogo_claro.png)
+
+![Imagen del catálogo de diplomados tema oscuro](img/Catalogo_oscuro.png)
 
 ### Carrusel de certificaciones y footer
 
-![Imagen del carrusel de certificaciones y footer](img/imagen%20footer.png)
+![Imagen del carrusel de certificaciones y footer](img/Footer_claro.png)
 
 ## Cómo correr localmente
 
