@@ -319,6 +319,11 @@
 .modo-oscuro label {
     color: white;
 }
+.modo-oscuro .pokemon-card,
+.modo-oscuro .pokemon-card * {
+    color: black;
+}
+
 .modo-oscuro .card {
     background-color: rgb(70, 70, 71) !important;
     color: white;
