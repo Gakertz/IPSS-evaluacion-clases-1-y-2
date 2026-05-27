@@ -9,7 +9,7 @@ export function btnCatalogo(){
         '#e0f2f1', '#e8f5e9', '#f1f8e9', '#f9fbe7', 
         '#fffde7', '#fff8e1', '#fff3e0', '#fbe9e7'
     ];
- 
+
     botonesDescargar.forEach((boton) => {
         boton.addEventListener("click", (event) => {
             event.preventDefault();
@@ -17,6 +17,8 @@ export function btnCatalogo(){
             alert("¡Iniciando la descarga de la malla!");
         });
     });
+
+    const botonesInfo = document.querySelectorAll(".btnInfo");
 
     botonInfo.forEach((boton) => {
         boton.addEventListener("click", async function(event) {
