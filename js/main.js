@@ -1,5 +1,5 @@
 import { iniciarModoOscuro } from './modo_oscuro.js';
-
+import './submit.js';
 document.addEventListener("DOMContentLoaded", () => {
     iniciarModoOscuro();
 
@@ -9,12 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const rut =
         document.getElementById("rut");
 
-    const diplomado =
-        document.getElementById("diplomado");
-
-    const pais =
-        document.getElementById("pais");
-
     const contacto =
         document.getElementById("contacto");
 
@@ -23,19 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const mensajeContacto =
         document.getElementById("mensajeContacto");
-
-    const mensajeFormulario =
-        document.getElementById("mensajeFormulario");
-
-    form.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        const nombreDiplomado =
-            diplomado.options[diplomado.selectedIndex].text;
-
-        mensajeFormulario.textContent =
-            `Gracias por solicitar más información sobre el ${nombreDiplomado}. Te contactaremos a la brevedad.`;
-    });
 
     form.addEventListener("input", function () {
 
