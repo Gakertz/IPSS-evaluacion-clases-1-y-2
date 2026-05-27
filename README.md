@@ -45,3 +45,24 @@ cd IPSS-evaluacion-clases-1-y-2
 # Abrir index.html en el navegador
 # O con un servidor:
 python3 -m http.server 8000
+```
+## Evolutivos implementados
+
+Desde el tag "v1.0" se incorporaron mejoras funcionales, visuales y de organización del proyecto, orientadas a cumplir los requerimientos de la segunda etapa de evaluación.
+
+### Modularización del código JavaScript
+
+Se reorganizó la lógica JavaScript en archivos separados según responsabilidad. El archivo "js/main.js" quedó como punto central de inicialización del sitio, importando las funcionalidades principales:
+
+- Modo oscuro.
+- Validación del formulario.
+- Funcionalidades de botones del catálogo.
+- "Envío" y descarga del formulario.
+
+## Archivos incorporados:
+
+- modo_oscuro.js
+- validacion.js
+- submit.js
+- btnCatalogo.js
+- api.js
