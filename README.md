@@ -73,12 +73,12 @@ Para cumplir con los requisitos de la evaluación y mantener el proyecto simple,
 ### Organización del código JavaScript
 El código JavaScript se separó en módulos para mantener una estructura más ordenada.
 
-main.js          -> inicializa las funcionalidades
-modo_oscuro.js   -> controla el modo oscuro
-validacion.js    -> valida teléfono y RUT
-submit.js        -> descarga el formulario como JSON al enviarlo
-btnCatalogo.js   -> controla los botones del catálogo
-api.js           -> realiza las peticiones con fetch
+- main.js          -> inicializa las funcionalidades
+- modo_oscuro.js   -> controla el modo oscuro
+- validacion.js    -> valida teléfono y RUT
+- submit.js        -> descarga el formulario como JSON al enviarlo
+- btnCatalogo.js   -> controla los botones del catálogo
+- api.js           -> realiza las peticiones con fetch
 
 Se utilizó PokeAPI como API pública porque no requiere autenticación, responde en formato JSON y permite probar fácilmente el consumo de datos externos con fetch.
 Además, se complementó con el archivo local data/datos.json, donde se guarda la información propia de los diplomados.
